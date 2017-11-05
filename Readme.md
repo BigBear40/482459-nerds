@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Sergey Tuzhikov](https://up.htmlacademy.ru/htmlcss/19/user/482459).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Свистунов](https://htmlacademy.ru/profile/swhistle) .
 
 ---
 
