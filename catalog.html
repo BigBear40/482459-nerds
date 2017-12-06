@@ -3,40 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nerds - Каталог</title>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&#38;subset=latin,cyrillic-ext'>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.mini.css">
+	 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/min.style.css" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
-		<div class="container">
-			<a class="logo" href="index.html">
-					<img src="img/nerds-logo.svg" width="139" height="56" alt="Nerds"></a>
-				  <img src="img/cart-icon.svg" alt="cart">
-							<a class="basket" href="#"><i class="icon-cart"></i>Корзина</a>
-							</div>	  
-			<section class="menu clearfix">
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="index.html">Студия</a>
-						</li>
-						<li>
-							<a href="#">Клиенты</a>
-						</li>
-						<li class="active">
-							<a href="#">Магазин</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
+	<header class="page-header">
+     <div class="main-wrapper">
+       <div class="container"> 
+    	   <nav class="main-navigation" aria-label="Главное меню сайта">
+         <a class="page-header-logo" href="index.html">
+					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+				</a> 
+      	<ul class="site-navigation">
+          <li><a class="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul> 
+        <ul class="user-navigation">
+            <li>
+              <img src="img/cart-icon.svg" alt="cart">
+              <a class="basket" href="#"><i class="icon-basket"></i>Корзина</a>
+          </ul>
+          </nav>
+        </div>
+      </div>
 			<div class="header-title">
-				Добро пожаловать в магазин готовых макетов
+				Магазин готовых макетов
 			</div>
 	</header>
-	<div class="container">
-		<div class="filter">
+	<main class=container>
+		<div class="filters">
 			<form action="#" method="post">
 				<fieldset class="filter-price">
 					<legend>Стоимость:</legend>
@@ -90,12 +88,12 @@
 		<div class="catalog">
 			<div class="catalog-sorting">
 				<span>Сортировать:</span>
-				<a href="#">По цене</a>
+				<a class="active" href="#">По цене</a>
 				<a href="#">По типу</a>
 				<a href="#">По функционалу</a>
 				<div class="sort-updown">
-					<span class="arrow-down active"><i class="icon-down-dir"></i></span>
-					<span class="arrow-up"><i class="icon-up-dir"></i></span>
+					<a>class="arrow-down active"><i class="icon-down-dir"></i></a>
+					<a> class="arrow-up"><i class="icon-up-dir"></i></a>
 				</div>
 			</div>
 			<div class="catalog-list">
@@ -173,19 +171,35 @@
 				<a class="next" href="#">Следующая</a>
 			</div>
 		</div>
-	</div>
+	</main>
 
-	<section class="map">
-		<div class="map-image" id="map-canvas"></div>
-		<div class="container">
-			<div class="contacts">
-				<h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
-				<p>350000,Краснодар,<br>
-				ул. Головатого, д. 100</p>
-				<p>тел. +78612757575</p>
-				<a class="btn btn-red" href="form.html">Напишите нам</a>
-			</div>
-			<section class="feedback-form">
+	<footer class="conatacts">
+		div class="footer-map-wrapper">
+        <div class="container">
+          <section class="footer-contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="contact-address">
+              <h3 class="visually-hidden">Наш адрес</h3>
+              <p class="contact-studio-name">Nёrds design studio</p>
+              <p>191186, Санкт-Петербург,
+                ул.Б.Конюшенная, д. 19/8</p>
+              <p>тел. +7 (812) 275-75-75</p>
+              <a class="button contact-button" href="contact-us.html">Напишите нам</a>
+            </div>
+            <div class="contact-map">
+              <h3>
+                <a class="map-button" href="contact-map.html"><span class="visually-hidden">Посмотреть на карте</span>
+                <img src="img/map-marker.png" width="216" height="188" alt="Логотип-указатель">
+                </a>
+              </h3>
+            </div>
+          </section>
+        </div>
+        <div class="interactive-frame">
+          <iframe class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2979727352218!2d30.32055129434374!3d59.93884659524806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1512393668069" allowfullscreen></iframe>
+        </div>
+      <section class="feedback-form">
+      	<h2>Напишите нам</h2>
 				<div class="feedback-form-close"></div>
 				<form action="#" method="post">
 					<div class="half-width">
@@ -199,24 +213,21 @@
 					<label for="text">Текст письма:</label>
 					<textarea name="text" id="text" placeholder="в свободной форме"></textarea>
 					<button class="btn btn-red" type="submit">Отправить</button>
-        	<button class="btn btn-gray" type="reset">Отмена</button>		
-        </form>
+        	<button class="btn btn-gray" type="button" aria-label="Закрыть"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></button>	
+        </form>	
 			</section>
-		</div>
-	</section>
-	
-	<footer>
-		<div class="container">
+
+		   <div class="social-links">
            <ul class="links">
             <li><a class="social-link-vk" href="#">Вконтакте</a></li>
             <li><a class="social-link-f" href="#">Фейсбук</a></li>
             <li><a class="social-link-inst" href="#">Инстаграм</a></li>
            </ul>
-         </div>
-			   <div class="footer-text">
+       </div>
+			   <div class="discount">
 				<p>Давайте дуржить, это выгодно</p>
 				<span>Скидка 10% для друзей из социальных сетей.</span>
-		</div>
+		   </div>
 	</footer>
 </body>
 </html>
